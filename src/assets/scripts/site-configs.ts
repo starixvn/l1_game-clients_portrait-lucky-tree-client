@@ -8,14 +8,14 @@ declare global {
 
 const defaultConfig: gc.Configs.SiteConfigs = {
     isDev: false, // if this property is true, then you should add token=anything into the querytring to sso to the game http://localhost:7456/?token=anything
-    systemType: "SG",
+    systemType: "HD",
     serverDomainMapper: {
         localhost: "lumigame.com",
     },
     ssl: true,
-    subDomain: "l1-proxy2",
+    subDomain: "hd-proxy",
     env: "LOCAL",
-    subGuideDomain: "l1-guide-2",
+    subGuideDomain: "hd-guide",
     SGConnectSubDomain: "connectsite",
     enableMsgpackParserAllGames: false,
     enableMsgpackParserOnNotification: false,
@@ -25,6 +25,8 @@ const defaultConfig: gc.Configs.SiteConfigs = {
     },
     mainObserverNamespace: "TapFortune",
     tolgeeUrl: "",
+    storagePrefixKey: "portrait_tapfortune",
+    backgroundNoTranslate: true,
 };
 
 let configDev = {
