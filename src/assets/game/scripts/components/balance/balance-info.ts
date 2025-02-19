@@ -13,6 +13,9 @@ export class BalanceInfo extends ObserverComponent {
     @property(Label)
     lblBalance: Label = null;
 
+    @property(Label)
+    lblName: Label = null;
+
     @render(BalanceInfoHandler, (store) => store.balance)
     setBalance(value: number) {
         this.lblBalance && (this.lblBalance.string = FormatUtils.truncateFixedDecimals(value, 2).toString());
@@ -20,5 +23,10 @@ export class BalanceInfo extends ObserverComponent {
             .to(0.1, { scale: new Vec3(0.55, 0.55, 1) })
             .to(0.1, { scale: new Vec3(0.5, 0.5, 1) })
             .start();
+    }
+
+    @render(MainPlayerStore, (store) => store.name)
+    setName(text: string) {
+        this.lblName && (this.lblName.string = text);
     }
 }
