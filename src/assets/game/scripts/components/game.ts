@@ -12,8 +12,6 @@ import { BalanceInfoHandler } from "./balance/balance-info-handler";
 import { EffectContainer } from "./win/effect-container";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.namespaces);
-const { Player } = gc;
-const { MainPlayerStore } = Player;
 
 const { ccclass, property } = _decorator;
 const { observer, render, handle } = Observer;
@@ -28,9 +26,6 @@ export interface IWinInstantResult {
 export default class Game extends GameComponent {
     @property(Node)
     nodeEffectContainer: Node = null;
-
-    @property(Label)
-    lblName: Label = null;
 
     override namespace = settings.name;
     override containerOptions = containerOptions;

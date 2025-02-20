@@ -1,1 +1,13 @@
-{"ver":"1.1.50","importer":"prefab","imported":true,"uuid":"de9b2d29-bdb0-4d57-b41d-33b5e58d9b18","files":[".json"],"subMetas":{},"userData":{"syncNodeName":"bet-history-new-body-item"}}
+{
+  "ver": "1.1.50",
+  "importer": "prefab",
+  "imported": true,
+  "uuid": "1886db28-8a7e-416d-8c9c-38cd6d81be82",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "bet-history-new-body-item"
+  }
+}
