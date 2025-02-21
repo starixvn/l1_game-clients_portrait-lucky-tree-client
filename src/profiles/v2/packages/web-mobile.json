@@ -6,7 +6,7 @@
       "outputName": "web-mobile",
       "mainBundleCompressionType": "merge_dep",
       "platform": "web-mobile",
-      "useSplashScreen": true,
+      "useSplashScreen": false,
       "skipCompressTexture": false,
       "mainBundleIsRemote": false,
       "startScene": "cdeb5c24-9ba8-4cab-a306-8a562fd04b39",
@@ -46,20 +46,22 @@
           "cleanupImageCache": "off"
         },
         "includeModules": {
-          "gfx-webgl2": "off"
+          "gfx-webgl2": "inherit-project-setting"
         }
       }
     },
     "options": {
       "web-mobile": {
-        "orientation": "landscape",
+        "orientation": "portrait",
         "embedWebDebugger": false,
-        "__version__": "1.0.1"
+        "__version__": "1.0.1",
+        "cullEngineAsmJsModule": false,
+        "useWebGPU": false
       }
     },
     "taskOptionsMap": {
       "1681353552761": {
-        "orientation": "landscape",
+        "orientation": "portrait",
         "embedWebDebugger": false,
         "__version__": "1.0.1",
         "cullEngineAsmJsModule": false,
