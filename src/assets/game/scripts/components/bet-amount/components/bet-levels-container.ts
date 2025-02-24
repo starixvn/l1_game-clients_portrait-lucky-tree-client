@@ -1,5 +1,5 @@
 import gc from "@sg/game-client-base";
-import { _decorator, instantiate, Layout, Node, Prefab, UITransform } from "cc";
+import { _decorator, instantiate, Layout, Node, Prefab, UITransform, v3 } from "cc";
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
 import Observer from "observer";
 import BetLevelItem from "./bet-level-item";
@@ -19,6 +19,7 @@ export default class BetLevelsContainer extends ObserverComponent {
     private betLevels: number[] = [];
     private readonly itemHeight = 60;
     private readonly itemsOfColumnMax = 5;
+    private readonly itemsAlignCenterMax = 15;
 
     setBetLevels(betLevels: number[]) {
         if (betLevels.length <= 0) {
@@ -47,6 +48,12 @@ export default class BetLevelsContainer extends ObserverComponent {
             height = this.itemsOfColumnMax * this.itemHeight + (this.itemsOfColumnMax + 1) * 10;
         } else {
             height = this.betLevels.length * this.itemHeight + (this.betLevels.length + 1) * 10;
+        }
+
+        if (this.betLevels.length > this.itemsAlignCenterMax) {
+            this.node.position = v3(100, 0, 0);
+        } else {
+            this.node.position = v3(0, 0, 0);
         }
 
         this.content.getComponent(UITransform).height = height;
