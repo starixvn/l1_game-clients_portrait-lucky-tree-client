@@ -28,9 +28,6 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 128
-      },
-      {
         "__id__": 130
       },
       {
@@ -41,10 +38,13 @@
       },
       {
         "__id__": 136
+      },
+      {
+        "__id__": 138
       }
     ],
     "_prefab": {
-      "__id__": 138
+      "__id__": 140
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -99,11 +99,11 @@
         "__id__": 9
       },
       {
-        "__id__": 125
+        "__id__": 127
       }
     ],
     "_prefab": {
-      "__id__": 127
+      "__id__": 129
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -286,10 +286,13 @@
       },
       {
         "__id__": 122
+      },
+      {
+        "__id__": 124
       }
     ],
     "_prefab": {
-      "__id__": 124
+      "__id__": 126
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -2626,6 +2629,30 @@
     "fileId": "bf6qp7QP1EaqMyH0u6sqyS"
   },
   {
+    "__type__": "7cf31eXBgpDk7fYd/q5uAMp",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 125
+    },
+    "lblDate": {
+      "__id__": 111
+    },
+    "lblTime": {
+      "__id__": 103
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "2aXBszRYdF7bl1iMh3zfN4"
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -2648,7 +2675,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 126
+      "__id__": 128
     },
     "_alignFlags": 40,
     "_target": null,
@@ -2697,7 +2724,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 129
+      "__id__": 131
     },
     "_opacity": 255,
     "_id": ""
@@ -2716,7 +2743,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 131
+      "__id__": 133
     },
     "_contentSize": {
       "__type__": "cc.Size",
@@ -2744,7 +2771,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 133
+      "__id__": 135
     },
     "target": {
       "__id__": 11
@@ -2772,7 +2799,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 135
+      "__id__": 137
     },
     "_alignFlags": 40,
     "_target": null,
@@ -2808,7 +2835,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 137
+      "__id__": 139
     },
     "lblTime": null,
     "lblRound": {
@@ -2832,6 +2859,9 @@
     "btnRound": null,
     "result": null,
     "lblWinLoss": null,
+    "dateTimeLabels": {
+      "__id__": 124
+    },
     "_id": ""
   },
   {
