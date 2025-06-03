@@ -23,9 +23,6 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "tapfortune",
         route: "tapfortune",
     },
-    websocketOptions: {
-        timeout: 3000,
-    },
     mainObserverNamespace: "TapFortune",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_tapfortune",
