@@ -5,3 +5,4 @@ export * as en from "./en";
     export * as zh_cn from "./zh_cn";
     export * as zh_tw from "./zh_tw";
 export * as ja from "./ja";
+export * as ja from "./es";
