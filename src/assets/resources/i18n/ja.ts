@@ -38,7 +38,7 @@ export const languages = {
         "game_category_new_releases": "新作",
         "game_category_ph_1": "全ゲーム",
         "game_category_ph_2": "ピノイ・スペシャル",
-        "game_category_ph_3": "スロットゲーム",
+        "game_category_ph_3": "スロット",
         "game_category_ph_4": "カードゲーム",
         "game_category_ph_5": "カジュアルゲーム",
         "game_category_ph_6": "ロト",
@@ -228,7 +228,7 @@ export const languages = {
     },
     "TapFortune": {
         "game_icon_name": "タップ・フォーチュン",
-        "game_name": "タップ大当たり"
+        "game_name": "Tap Fortune"
     },
     "TapGame": {
         "auto_play": "オートプレイ",
