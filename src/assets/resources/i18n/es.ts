@@ -173,8 +173,10 @@ export const languages = {
         "pf_header_client_seed": "Semilla del Cliente",
         "pf_header_combined_sha512_hash": "Hash SHA512 combinado",
         "pf_ header_merge_client_seed": "Combinar la  \nsemilla del cliente",
+        "pf_ header_merge_client_seed_single": "Combinar la semilla del cliente",
         "pf_header_server_seed": "Semilla del Servidor",
         "pf_header_server_seed_sha256": "SHA256 de la  \nsemilla del servidor",
+        "pf_header_server_seed_sha256_single": "SHA256 de la semilla del servidor",
         "pf_new_client_seed_para_1": "Tu semilla:",
         "pf_player_1": "Jugador 1",
         "pf_player_2": "Jugador 2",
@@ -228,7 +230,7 @@ export const languages = {
     },
     "TapFortune": {
         "game_icon_name": "TOCA LA FORTUNA",
-        "game_name": "Tap Fortune"
+        "game_name": "TOCA LA FORTUNA"
     },
     "TapGame": {
         "auto_play": "AUTOPLAY",
