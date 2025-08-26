@@ -57,7 +57,7 @@ export class EffectContainer extends ObserverComponent {
     private feafTimeStamp = 0;
     private treeTimeStamp = 0;
     private gameVisible = true;
-    private SLOT_TIMEOUT = 5000;
+    private readonly SLOT_TIMEOUT = 5000;
     private slots: { [id: number]: SlotInfo } = {};
 
     onLoad() {
