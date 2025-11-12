@@ -26,6 +26,12 @@ const defaultConfig: gc.Configs.SiteConfigs = {
     tolgeeUrl: "",
     storagePrefixKey: "portrait_tapfortune",
     backgroundNoTranslate: true,
+    sentry: {
+        dsn: "",
+        browserUrl: "",
+        urlHash: "",
+        ignoreErrors: [],
+    },
 };
 
 let configDev = {
