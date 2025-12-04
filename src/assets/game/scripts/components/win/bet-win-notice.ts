@@ -1,8 +1,7 @@
-import gc from "@sg/game-client-base";
 import { _decorator, Component, Label, Sprite, SpriteFrame, tween, UIOpacity, v3 } from "cc";
 import { bundleManager } from "db://shared-components/shared/common-components/bundle-manager/bundle-manager";
+import { formatCurrencyWithConfig } from "db://shared-components/shared/utils";
 
-const { FormatUtils } = gc;
 const { ccclass, property } = _decorator;
 
 @ccclass
@@ -82,6 +81,6 @@ export default class BetWinNotice extends Component {
     }
 
     setBetWin(betWin: number) {
-        this.lblBetWin.string = `+${FormatUtils.numberWithCommas(betWin, 2)}`;
+        this.lblBetWin.string = `+${formatCurrencyWithConfig(betWin)}`;
     }
 }

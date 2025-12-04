@@ -1,17 +1,16 @@
 import gc from "@sg/game-client-base";
 import { _decorator, instantiate, Label, Node, Prefab, tween, Vec3 } from "cc";
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
+import { formatCurrencyWithConfig } from "db://shared-components/shared/utils";
 import Observer from "observer";
-
 import { InstantWinConfigStore } from "../../../game-configs/instant-win-config-store";
 import { AutoPlayStore } from "../../auto-play/auto-play-store";
 import { BetAmountHandlers } from "../bet-amount-handlers";
 import { BetAmountStore } from "../bet-amount-store";
 import BetLevelsContainer from "./bet-levels-container";
 
-const { FormatUtils } = gc;
 const { ccclass, property } = _decorator;
-const { observer, render, handle } = Observer;
+const { render, handle } = Observer;
 
 @ccclass
 export default class BetAmount extends ObserverComponent {
@@ -61,7 +60,7 @@ export default class BetAmount extends ObserverComponent {
     }
 
     setBetAmount(betAmount: number) {
-        this.lblBetLevelDefault.string = FormatUtils.numberWithCommas(betAmount, 2);
+        this.lblBetLevelDefault.string = formatCurrencyWithConfig(betAmount);
         this.betAmount = betAmount;
     }
 

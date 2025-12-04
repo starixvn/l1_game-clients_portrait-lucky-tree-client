@@ -1,12 +1,12 @@
 import gc from "@sg/game-client-base";
 import { _decorator, Label, Node } from "cc";
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
+import { formatCurrencyWithConfig } from "db://shared-components/shared/utils";
 import Observer from "observer";
 import { BetAmountHandlers } from "../bet-amount-handlers";
 
-const { FormatUtils } = gc;
 const { ccclass, property } = _decorator;
-const { observer, render, handle } = Observer;
+const { handle } = Observer;
 
 @ccclass
 export default class BetLevelItem extends ObserverComponent {
@@ -26,7 +26,7 @@ export default class BetLevelItem extends ObserverComponent {
 
     setData(betLevel: number) {
         this.currentBetLevel = betLevel;
-        this.lblBet.string = FormatUtils.numberWithCommas(betLevel, 2);
+        this.lblBet.string = formatCurrencyWithConfig(betLevel);
     }
 
     setSelectedNode(isSelected: boolean) {
